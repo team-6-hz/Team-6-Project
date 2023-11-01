@@ -2,13 +2,13 @@
 	import "../app.css";
 </script>
 
-<div class="flex flex-col h-screen justify-between">
-	<main>
+<div class="flex flex-col h-screen justify-between w-full" >
+	<main class="w-screen">
 		<slot />
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+
 	</footer>
 </div>
 
