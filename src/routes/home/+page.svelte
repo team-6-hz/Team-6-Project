@@ -12,7 +12,7 @@
     <NavBar />
 </header>
 
-<body class="bg-[#EEF5DB]">
+<body class="bg-white">
     <div class="mt-28">
         <div class="h-full">
             <h2 class="text-6xl text-center font-bold text-[#3730A3]">Forum</h2>
