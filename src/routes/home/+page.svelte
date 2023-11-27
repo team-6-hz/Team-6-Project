@@ -13,7 +13,7 @@
 </header>
 
 <body class="bg-white">
-    <div class="mt-28">
+    <div class="mt-8 mb-8">
         <div class="h-full">
             <h2 class="text-6xl text-center font-bold text-[#3730A3]">Forum</h2>
         </div>
@@ -36,9 +36,6 @@
           <div class="text-lg font-bold">Some category title</div>
          
         </div>
-        
-        
-
         <!-- Forum Topics -->
         <div class="container mx-auto mt-8">
             <!-- Repeat this block for each forum topic -->

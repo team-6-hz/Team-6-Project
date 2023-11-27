@@ -15,8 +15,12 @@
                 <a
                     href="/chat"
                     class="text-[#DFC2F2] text-2xl p-8 font-bold hover:text-white"
-                    >Chat & Activities</a
+                    >Chat</a
                 >
+                <a 
+                    href="/activities"
+                    class="text-[#DFC2F2] text-2xl p-8 font-bold hover:text-white"
+                    >Activities</a>
                 <a
                     href="/profilepage"
                     class="text-[#DFC2F2] text-2xl font-bold hover:text-white"
