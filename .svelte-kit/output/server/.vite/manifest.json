@@ -7,6 +7,12 @@
     "isEntry": true,
     "src": ".svelte-kit/generated/server/internal.js"
   },
+  "_NavBar.js": {
+    "file": "chunks/NavBar.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
   "_index.js": {
     "file": "chunks/index.js"
   },
@@ -15,6 +21,38 @@
     "imports": [
       "_index.js"
     ]
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf": {
+    "file": "_app/immutable/assets/fa-brands-400.003f1154.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
+    "file": "_app/immutable/assets/fa-brands-400.faae6fc0.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf": {
+    "file": "_app/immutable/assets/fa-regular-400.7d81a1a7.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
+    "file": "_app/immutable/assets/fa-regular-400.9169d8be.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf": {
+    "file": "_app/immutable/assets/fa-solid-900.cea79b34.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "_app/immutable/assets/fa-solid-900.886c8611.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf": {
+    "file": "_app/immutable/assets/fa-v4compatibility.455e8e72.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "_app/immutable/assets/fa-v4compatibility.335fd7d9.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
@@ -34,12 +72,12 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.516ffa7c.css",
+    "file": "_app/immutable/assets/_layout.0f37f22b.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.516ffa7c.css"
+      "_app/immutable/assets/_layout.0f37f22b.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -55,6 +93,15 @@
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
+  },
+  "src/routes/chat/+page.svelte": {
+    "file": "entries/pages/chat/_page.svelte.js",
+    "imports": [
+      "_index.js",
+      "_NavBar.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/chat/+page.svelte"
   },
   "src/routes/example/+page.js": {
     "file": "entries/pages/example/_page.js",
@@ -73,5 +120,40 @@
     ],
     "isEntry": true,
     "src": "src/routes/example/+page.svelte"
+  },
+  "src/routes/home/+page.css": {
+    "file": "_app/immutable/assets/_page.1f823b9a.css",
+    "src": "src/routes/home/+page.css"
+  },
+  "src/routes/home/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/fa-brands-400.faae6fc0.woff2",
+      "_app/immutable/assets/fa-brands-400.003f1154.ttf",
+      "_app/immutable/assets/fa-regular-400.9169d8be.woff2",
+      "_app/immutable/assets/fa-regular-400.7d81a1a7.ttf",
+      "_app/immutable/assets/fa-solid-900.886c8611.woff2",
+      "_app/immutable/assets/fa-solid-900.cea79b34.ttf",
+      "_app/immutable/assets/fa-v4compatibility.335fd7d9.woff2",
+      "_app/immutable/assets/fa-v4compatibility.455e8e72.ttf"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.1f823b9a.css"
+    ],
+    "file": "entries/pages/home/_page.svelte.js",
+    "imports": [
+      "_index.js",
+      "_NavBar.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/home/+page.svelte"
+  },
+  "src/routes/profilepage/+page.svelte": {
+    "file": "entries/pages/profilepage/_page.svelte.js",
+    "imports": [
+      "_index.js",
+      "_NavBar.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/profilepage/+page.svelte"
   }
 }
