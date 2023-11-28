@@ -4,6 +4,7 @@ const moonIcon = document.querySelector('.fa-solid.fa-moon');
 // Theme
 const userTheme = localStorage.getItem('theme');
 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 // Toggling
 const iconToggle = () => {
     moonIcon.classList.toggle('hidden');

@@ -6,5 +6,6 @@
 		"src/routes/example/+page.server.js"
 	],
 	"/home": [],
+	"/post": [],
 	"/profilepage": []
 }
