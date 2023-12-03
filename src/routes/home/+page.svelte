@@ -42,18 +42,6 @@
       <a href="/crud" class="bg-green-500 text-white px-4 py-2 rounded">
         <i class="fa fa-plus"></i> Create
       </a>
-      
-      <!-- Update/Edit Button -->
-      <button class="bg-blue-500 text-white px-4 py-2 rounded" on:click={() => handleEditCategory()}>
-        <i class="fa fa-pencil-alt"></i> Edit
-      </button>
-      
-      <!-- Delete Button -->
-      <button class="bg-red-500 text-white px-4 py-2 rounded" on:click={() => handleDeleteCategory()}>
-        <i class="fa fa-trash-alt"></i> Delete
-      </button>
-    </div>
-         
         </div>
         <!-- Forum Topics -->
         <div class="container mx-auto mt-8">
