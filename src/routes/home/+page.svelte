@@ -1,6 +1,7 @@
 <script>
     import NavBar from "$lib/components/NavBar.svelte";
     import '@fortawesome/fontawesome-free/css/all.css'; // Import FontAwesome icons
+    import { goto } from '$app/navigation';
 </script>
 
 <svelte:head>
@@ -13,6 +14,7 @@
 </header>
 
 <body class="bg-white">
+  
     <div class="mt-8 mb-8">
         <div class="h-full">
             <h2 class="text-6xl text-center font-bold text-[#3730A3]">Forum</h2>
@@ -23,6 +25,7 @@
           <div class="flex items-center space-x-2">
             <a href="/home" class="hover:text-gray-400"><i class="fa fa-home"></i></a> / 
             <a href="#" class="hover:text-gray-400">Some category</a> / 
+            
             <a href="#" class="hover:text-gray-400">Forum Statistics</a>
           </div>
           <div class="text-right">
@@ -34,6 +37,22 @@
       <div class="container mx-auto">
         <div class="rounded bg-[#3730A3] text-white p-4 flex justify-between items-center mb-4">
           <div class="text-lg font-bold">Some category title</div>
+          <div class="flex space-x-2">
+      <!-- Create Button -->
+      <a href="/crud" class="bg-green-500 text-white px-4 py-2 rounded">
+        <i class="fa fa-plus"></i> Create
+      </a>
+      
+      <!-- Update/Edit Button -->
+      <button class="bg-blue-500 text-white px-4 py-2 rounded" on:click={() => handleEditCategory()}>
+        <i class="fa fa-pencil-alt"></i> Edit
+      </button>
+      
+      <!-- Delete Button -->
+      <button class="bg-red-500 text-white px-4 py-2 rounded" on:click={() => handleDeleteCategory()}>
+        <i class="fa fa-trash-alt"></i> Delete
+      </button>
+    </div>
          
         </div>
         <!-- Forum Topics -->

@@ -67,7 +67,7 @@
         <div class="border-t-2 border-[#3730A3] pt-2">Groove to the beats in our lively dance event!</div>
     </div>
 
-</div>    
+</div>     
   
   </body>
 
