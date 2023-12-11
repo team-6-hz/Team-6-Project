@@ -1,11 +1,11 @@
 <script src="./app.js">
 </script>
 
-<nav class="bg-[#3730A3] p-4 sticky top-0 w-full z-10">
-    <div class="container mx-auto flex justify-between items-center">
+<nav class="bg-[#3730A3] h-24 sticky top-0 w-full z-1 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+    <div class="container pt-4 mx-auto flex justify-between items-center justify-self-center  drop-shadow-xl  justify-items-center justify-items-center">
         <a href="/home" class="text-[#DFC2F2] text-6xl font-bold">Anxietr</a>
 
-        <ul class="flex space-x-4">
+        <ul class="flex space-x-4 ">
             <li>
                 <a
                     href="/home"

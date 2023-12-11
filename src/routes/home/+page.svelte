@@ -42,7 +42,7 @@
       </div>
       <div class="text-right">
         <p class="text-gray-600">
-          Welcome, <a href="#" class="underline">CATEATER889</a>
+          Welcome, <a href="#" class="underline">Admin</a>
         </p>
       </div>
     </div>

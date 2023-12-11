@@ -1,20 +1,37 @@
 <script>
     import Example from "$lib/components/Example.svelte";
+    import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
+
+  onMount(() => {
+    const targetUrl = 'http://localhost:5173/home';
+
+    setTimeout(myAction, 1000);
+    function myAction() {
+      goto(targetUrl);
+    }
+
+  });
+ 
 </script>
+
+
 
 <div
     class="container w-full mx-auto grid font-sans"
-    style="grid-template-rows: 15% 75% 10; min-width: 100vw;"
+    style="grid-template-rows: 100%; min-width: 100vw;"
 >
-    <div
+<img src="https://miro.medium.com/v2/resize:fit:640/1*WpB-1uJaKyvY3Kb3SOsQfg.jpeg" alt="logo" class="w-full h-full" />
+    <!-- <div
         class="top bg-slate-700 font-bold text-4xl grid text-white h-24"
         style="grid-template-columns: 1fr 2fr 1fr; justify-content: center; align-items: center; justify-items: center;"
     >
         <div>Anxietr</div>
         <div class="text-3xl">Stress relief forums</div>
         <div class="text-xl">Account</div>
-    </div>
-    <div
+    </div> -->
+    
+    <!-- <div
         class="mid bg-slate-200 min-h-full flex items-center justify-center"
         style="min-height: 800px;"
     >
@@ -65,8 +82,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="bottom h-3/6 text-center">Anxietr©</div>
+    </div> -->
+    <!-- <div class="bottom h-3/6 text-center">Anxietr©</div> -->
 </div>
 
 <style>

@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex flex-col h-screen justify-between w-full" >
-	<main class="w-screen">
+	<main class="w-full">
 		<slot />
 	</main>
 

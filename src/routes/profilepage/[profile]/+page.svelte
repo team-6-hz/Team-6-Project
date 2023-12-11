@@ -1,6 +1,10 @@
 <script>
   import NavBar from "$lib/components/NavBar.svelte";
   import { page } from "$app/stores";
+  import { onMount } from "svelte";
+
+  export let data;
+  console.log(data.userData.bg_url);
 </script>
 
 <svelte:head>
@@ -24,19 +28,22 @@
         <!-- pfp stuff here -->
         <div class="h-full pfpContainer">
           <img
-            class="pfp"
-            src="https://cdn.pixabay.com/photo/2018/10/23/10/29/cat-3767494_640.jpg"
-            alt="pfp"
+            class="pfp bg-slate-100"
+            src={data.userData.pfp_url}
+            alt="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg"
             style="min-width: 165px; min-height: 165px;"
           />
 
-          <div class="name">Cattingsohn Meowler</div>
+          <div class="name">
+            {#if data.userData.name}
+              {data.userData.name}
+            {:else}
+              {data.userData.username}
+            {/if}
+          </div>
           <div class="friends" />
           <div class="edit" />
-          <img
-            class="banner"
-            src="https://www.ntounas.gr/wp-content/uploads/2021/02/Lonely_Tree_in_a_Lavender_Field_in_Greece.jpg  "
-          />
+          <img class="banner" src={ data.userData.bg_url} alt="https://img.freepik.com/premium-vector/modern-minimal-white-stripe-texture-background_105940-1925.jpg" />
         </div>
         <div
           class="font-bold text-xl h-full bg-white border-t-2"
@@ -118,7 +125,7 @@
               Friends
             </h2>
             <div class="grid friends h-full">
-              {#each Array(5) as _, index (index)}
+              {#each Array(9) as _, index (index)}
                 <div class="friend grid">
                   <img
                     class="friendPfp"
@@ -145,10 +152,20 @@
               class=" w-[95%] h-32 bg-slate-100 self-center rounded-md border-2"
             />
             <button
-              class="w-[95%] h-10 font-bold text-white mt-3 bg-[#3730a3] border-2 rounded-md border-4 self-center"
+              class="w-[95%] h-10 font-bold text-white mt-3 bg-[#3730a3]  rounded-md border-4 self-center"
               >Post</button
             >
           </div>
+          {#each data.posts as post}
+            <!-- content here -->
+            <div
+              class="mt-3 mb-10 bg-white border-2 rounded-lg drop-shadow-sm shadow-blue-500/20 h-auto flex flex-col"
+            >
+              <h class="friendName ml-10 mt-3">{post.title}</h>
+              
+              <p class="border-t-2 p-4 post-content">{post.content}</p>
+            </div>
+          {/each}
         </div>
       </div>
     </div>
@@ -156,6 +173,9 @@
 </body>
 
 <style>
+  .post-content {
+    margin: 30px;
+  }
   .friendName {
     font-size: 1.5rem;
     font-weight: bold;
